@@ -88,7 +88,7 @@ def notify(results: list, slack_id: str, line_token: str) -> None:
     for result in sorted(results, reverse=True, key=lambda x: x.score):
         if count == 7:
             break
-        count++;
+        count+=1
         url = result.url
         title = result.title
         abstract = result.abstract
