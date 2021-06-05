@@ -1,11 +1,16 @@
 # arxivの学問領域の指定
-subject: 'cat:cs.*'
+subject: 'cat:cs.AI OR cat:cs.HC OR cat:cs.AI'
 
 # 検索キーワード
 keywords:
-        kaggle: 3
-        resnet: 3
-        anomaly detection: 1
+        agent: 2
+        robot: 2
+        behavior modification: 1
+        behavior change: 1
+        attitude modification: 1
+        interaction: 2
+        emotion: 2
+        character: 2
 
 # 通知の閾値
 score_threshold: 0
