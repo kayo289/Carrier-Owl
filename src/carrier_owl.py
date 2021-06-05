@@ -83,7 +83,7 @@ def notify(results: list, slack_id: str, line_token: str) -> None:
     # n_articles = len(results)
     text = f'{star}\n \t \t {today}\tnum of articles = 6\n読むぞ〜〜〜〜〜〜〜〜〜〜〜〜〜！！！！！！！\n{star}'
     send2app(text, slack_id, line_token)
-    count = 0
+    count = 
     # descending
     for result in sorted(results, reverse=True, key=lambda x: x.score):
         if count == 7:
