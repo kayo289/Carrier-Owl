@@ -81,7 +81,7 @@ def notify(results: list, slack_id: str, line_token: str) -> None:
     star = '*'*80
     today = datetime.date.today()
     n_articles = len(results)
-    text = f'{star}\n \t \t {today}\tnum of articles = {n_articles}(多くても7件までしか表示しない)\n読むぞ〜〜〜〜〜〜〜〜〜〜〜〜〜！！！！！！！\n{star}'
+    text = f'{star}\n \t \t {today}\tnum of articles = {n_articles}\n{star}'
     send2app(text, slack_id, line_token)
     # descending
     for result in sorted(results, reverse=True, key=lambda x: x.score):
